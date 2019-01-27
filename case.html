@@ -37,6 +37,24 @@
     .container-fiuld > *{
         background:white;
     }
+    .text-main-info{
+        font-size: 20px;
+    }
+    #content-tab a{
+        border-top:0px; 
+        border-left:0px; 
+        border-right:0px;
+        border-bottom:0px
+    }
+    .nav-item.active{
+        border-bottom: 2.5px solid #2196F3;
+    }
+    .nav-item{
+        border-bottom: 2.5px solid #dee2e6;
+    }
+    .nav-link.active{
+        font-weight: bolder;
+    }
 </style>
 
 <body>
@@ -55,81 +73,57 @@
             <button class="btn btn-sm btn-outline-primary">交通</button>
             <button class="btn btn-sm btn-outline-primary">醫療</button>
         </div>
-        <!--<div class="p-3" style="box-shadow:-2px 6px 10px 0px #eae8e8b5;">
-            <div class="d-flex justify-content-between">
-                <label><i class="fas fa-spinner mr-2 text-danger"></i>募資進度：25%</label>
-                <label><i class="far fa-clock mr-2 text-primary"></i>剩餘 30 天</label>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100">
-
-                </div>
-            </div>
-        </div>-->
         <div class="pb-3 px-3 shadow-sm">
-            <label class="pb-1 pt-2"><i class="far fa-clock mr-2 text-primary"></i>剩餘 30 天</label>
+            <label class="pb-3 pt-2"><i class="far fa-clock mr-2 text-primary"></i>剩餘 30 天</label>
             <div class="d-flex justify-content-between pb-2">
-                <div class="d-flex flex-column">
-                    <span class="text-center" style="
-    font-size: 20px;font-weight: 500;
-">25%</span>
+                <div class="align-items-center d-flex flex-column">
+                    <i class="fa-spinner fas text-danger text-main-info" style="
+        /* font-size: 25px; */
+    "></i>
+                    <span class="text-center font-weight-bold text-main-info">25%</span>
                     <span>募資進度</span>
                 </div>
 
-                <div class="d-flex flex-column">
-                    <span class="text-center" style="
-    font-size: 20px;font-weight: 500;
-">100</span>
+                <div class="align-items-center d-flex flex-column"><i class="fa-walking fas text-main-info" style="
+        /* font-size: 25px; */
+    "></i>
+                    <span class="text-center text-main-info font-weight-bold">100</span>
                     <span>參與圈友</span>
                 </div>
-                <div class="d-flex flex-column">
-                    <span class="text-center" style="
-    font-size: 20px;font-weight: 500;
-">NT 750,000</span>
+                <div class="align-items-center d-flex flex-column">
+                    <i class="fa-heartbeat fas text-danger text-main-info" style="
+        /* font-size: 25px; */
+    "></i><span
+                        class="text-center text-main-info font-weight-bold">NT 750,000</span>
                     <span>目標：3,000,000</span>
                 </div>
             </div>
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
                     aria-valuemin="0" aria-valuemax="100">
-
                 </div>
             </div>
         </div>
         <div class="mt-3 px-3 pt-2">
-            <ul class="d-flex nav nav-tabs border-0" id="myTab" role="tablist">
-                <li class="nav-item" style="border-bottom: 2.5px solid #2196F3;">
-                    <a class="nav-link active font-weight-bold" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                        aria-controls="home" aria-selected="true" style="border-top:0px; border-left:0px; 
-                        border-right:0px;
-                        border-bottom:0px">
+            <ul class="d-flex nav nav-tabs border-0" id="content-tab" role="tablist">
+                <li class="nav-item active">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                        aria-selected="true">
                         <span>
                             <i class="far fa-window-restore mr-1"></i>
                             募資簡介</span>
                     </a>
                 </li>
-                <li class="nav-item" style="
-    border-bottom: 2.5px solid #dee2e6;
-">
+                <li class="nav-item" style="border-bottom: 2.5px solid #dee2e6;">
                     <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                        aria-controls="profile" aria-selected="false" style="border-top:0px; border-left:0px; 
-                        border-right:0px;color:gray;
-                        "><i
-                            class="fas fa-history mr-1"></i>歷程</a>
+                        aria-controls="profile" aria-selected="false" style="color:gray;"><i class="fas fa-history mr-1"></i>歷程</a>
                 </li>
-                <li class="nav-item" style="
-    border-bottom: 2.5px solid #dee2e6;
-">
+                <li class="nav-item" style="border-bottom: 2.5px solid #dee2e6;">
                     <a class="nav-link  border-0" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                         aria-controls="contact" aria-selected="false" style="color:gray;">
                         <i class="far fa-comment mr-1"></i>留言</a>
                 </li>
-                <li class="flex-grow-1 nav-item" style="
-    border-bottom: 2.5px solid #dee2e6;
-    /* height: 100%; */
-    width: 10px;
-">
+                <li class="flex-grow-1 nav-item">
 
                 </li>
             </ul>
