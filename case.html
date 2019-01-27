@@ -55,6 +55,16 @@
     .nav-link.active{
         font-weight: bolder;
     }
+    .card-label-cnt{
+        font-size: 15px;    
+        line-height: 18px;
+    }
+    .card-label-content{
+        line-height: 25px;
+    }
+    .case-content-paragraph{
+        border: 3px solid #2196F3;
+    }
 </style>
 
 <body>
@@ -64,7 +74,7 @@
                 frameborder="0"></iframe>
         </div>
         <div class="px-3 pt-3 pb-1">
-            <span style="font-size:20px">
+            <span class="text-main-info">
                 松茂部落 | 海拔2000M的星星
             </span>
         </div>
@@ -83,40 +93,21 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between pb-2 pt-3 px-3">
-                <div class="align-items-center d-flex flex-column" style="
-            line-height: 25px;
-        ">
-                    <i class="fa-spinner fas text-danger text-main-info" style="
-                            /* font-size: 25px; */
-                        "></i>
-                    <span class="text-center font-weight-bold text-main-info" style="
-                    ">25%</span>
-                    <span style="
-                        font-size: 15px;    line-height: 18px;
-                    ">募資進度</span>
+                <div class="align-items-center d-flex flex-column card-label-content">
+                    <i class="fa-spinner fas text-danger text-main-info"></i>
+                    <span class="text-center font-weight-bold text-main-info">25%</span>
+                    <span class="card-label-cnt">募資進度</span>
                 </div>
 
-                <div class="align-items-center d-flex flex-column" style="
-            line-height: 25px;
-        "><i
-                        class="fa-walking fas text-main-info" style="
-                            /* font-size: 25px; */
-                        "></i>
+                <div class="align-items-center d-flex flex-column card-label-content"><i class="fa-walking fas text-main-info"></i>
                     <span class="text-center text-main-info font-weight-bold">100</span>
-                    <span style="
-                        font-size: 15px;    line-height: 18px;
-                    ">參與圈友</span>
+                    <span class="card-label-cnt">參與圈友</span>
                 </div>
-                <div class="align-items-center d-flex flex-column" style="
-            line-height: 25px;
-        ">
-                    <i class="fa-heartbeat fas text-danger text-main-info" style="
-                            /* font-size: 25px; */
-                        "></i><span
-                        class="text-center text-main-info font-weight-bold">NT 750,000</span>
-                    <span style="
-                        font-size: 15px;    line-height: 18px;
-                    ">目標：3,000,000</span>
+                <div class="align-items-center d-flex flex-column card-label-content">
+                    <i class="fa-heartbeat fas text-danger text-main-info"></i>
+                    <span class="text-center text-main-info font-weight-bold">NT
+                        750,000</span>
+                    <span class="card-label-cnt">目標：3,000,000</span>
                 </div>
             </div>
         </div>
@@ -130,11 +121,11 @@
                             募資簡介</span>
                     </a>
                 </li>
-                <li class="nav-item" style="border-bottom: 2.5px solid #dee2e6;">
+                <li class="nav-item">
                     <a class="nav-link border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                         aria-controls="profile" aria-selected="false" style="color:gray;"><i class="fas fa-history mr-1"></i>歷程</a>
                 </li>
-                <li class="nav-item" style="border-bottom: 2.5px solid #dee2e6;">
+                <li class="nav-item">
                     <a class="nav-link  border-0" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                         aria-controls="contact" aria-selected="false" style="color:gray;">
                         <i class="far fa-comment mr-1"></i>留言</a>
@@ -145,16 +136,19 @@
             </ul>
             <div class="tab-content my-3" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p class="text-main-info font-weight-bold">
+                        <span class="text-primary">#</span>
+                        認識松茂部落
+                    </p>
                     <img class="img-fluid" src="images/IMG_9499_1.jpg">
                     <div class="pt-3 px-3">
-                        <p class="border-bottom-0 border-right-0 border-top-0 pl-4 rounded" style="
-                            border: 3px solid #2196F3;
-                        ">
+                        <p class="border-bottom-0 border-right-0 border-top-0 pl-4 rounded case-content-paragraph">
                             位於海拔2000M、梨山的松茂部落，是泰雅族的一支。著名歌手·張雨生就是出身此部落。
                         </p>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+                </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
             </div>
         </div>
