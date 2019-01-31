@@ -313,9 +313,81 @@
                         <div class="d-flex align-items-center">
                             <div class="py-2 text-center flex-grow-1 bg-secondry" style="background: #ececec;"><i class="fas fa-star mr-2"
                                     style="color: #ffc107;"></i>加入追蹤</div>
-                            <div class="py-2 text-center flex-grow-1" style="    color: white;
-                            background: #da3a3a;"><i
-                                    class="fas fa-puzzle-piece mr-2"></i>立刻贊助</div>
+                            <div class="py-2 text-center flex-grow-1" data-toggle="modal" data-target="#exampleModalCenter"
+                                style="    color: white;
+                            background: #da3a3a;"><i class="fas fa-puzzle-piece mr-2"></i>立刻贊助</div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">選擇方案</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input id="one" name="paymentMethod" type="radio" class="custom-control-input"
+                                                    checked="" required="">
+                                                <label class="custom-control-label" for="one">
+                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span style="font-size:14px; color:gray">金額:100,000</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input id="two" name="paymentMethod" type="radio" class="custom-control-input"
+                                                    checked="" required="">
+                                                <label class="custom-control-label" for="two">
+                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span style="font-size:14px; color:gray">金額:100,000</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input id="three" name="paymentMethod" type="radio" class="custom-control-input"
+                                                    checked="" required="">
+                                                <label class="custom-control-label" for="three">
+                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span style="font-size:14px; color:gray">金額:100,000</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input id="four" name="paymentMethod" type="radio" class="custom-control-input"
+                                                    checked="" required="">
+                                                <label class="custom-control-label" for="four">
+                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span style="font-size:14px; color:gray">金額:100,000</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="custom-control custom-radio">
+                                                <input id="five" name="paymentMethod" type="radio" class="custom-control-input"
+                                                    checked="" required="">
+                                                <label class="custom-control-label" for="five">
+                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span style="font-size:14px; color:gray">金額:100,000</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                                    <button type="button" class="btn btn-primary">確定贊助</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
