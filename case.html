@@ -409,9 +409,7 @@
 
         //init LIFF
         liff.init(function (data) {
-        });
-        //ButtonGetProfile
-        liff.getProfile().then(
+            liff.getProfile().then(
             profile => {
                 alert(profile.displayName);
             }
@@ -440,6 +438,9 @@
                 }*/
             }
         ])
+        });
+        //ButtonGetProfile
+        
     })
 
 </script>
