@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>扶輪募資平台 | 影響圈</title>
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
@@ -312,10 +313,12 @@
                     <div class="fixed">
                         <div class="d-flex align-items-center">
                             <div class="py-2 text-center flex-grow-1 bg-secondry" style="background: #ececec;"><i class="fas fa-star mr-2"
-                                    style="color: #ffc107;"></i>加入追蹤</div>
+                                    style="color: #ffc107;
+                                    cursor:pointer;"></i>加入追蹤</div>
                             <div class="py-2 text-center flex-grow-1" data-toggle="modal" data-target="#exampleModalCenter"
                                 style="    color: white;
-                            background: #da3a3a;"><i class="fas fa-puzzle-piece mr-2"></i>立刻贊助</div>
+                            background: #da3a3a; cursor:pointer;"><i
+                                    class="fas fa-puzzle-piece mr-2"></i>立刻贊助</div>
                         </div>
                     </div>
                     <!-- Modal -->
@@ -346,7 +349,7 @@
                                                 <input id="two" name="paymentMethod" type="radio" class="custom-control-input"
                                                     checked="" required="">
                                                 <label class="custom-control-label" for="two">
-                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span>方案二：贊助半年份車費</span><br>
                                                     <span style="font-size:14px; color:gray">金額:100,000</span>
                                                 </label>
                                             </div>
@@ -356,7 +359,7 @@
                                                 <input id="three" name="paymentMethod" type="radio" class="custom-control-input"
                                                     checked="" required="">
                                                 <label class="custom-control-label" for="three">
-                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span>方案三：贊助半年份車費</span><br>
                                                     <span style="font-size:14px; color:gray">金額:100,000</span>
                                                 </label>
                                             </div>
@@ -366,7 +369,7 @@
                                                 <input id="four" name="paymentMethod" type="radio" class="custom-control-input"
                                                     checked="" required="">
                                                 <label class="custom-control-label" for="four">
-                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span>方案四：贊助半年份車費</span><br>
                                                     <span style="font-size:14px; color:gray">金額:100,000</span>
                                                 </label>
                                             </div>
@@ -376,7 +379,7 @@
                                                 <input id="five" name="paymentMethod" type="radio" class="custom-control-input"
                                                     checked="" required="">
                                                 <label class="custom-control-label" for="five">
-                                                    <span>方案一：贊助半年份車費</span><br>
+                                                    <span>方案五：贊助半年份車費</span><br>
                                                     <span style="font-size:14px; color:gray">金額:100,000</span>
                                                 </label>
                                             </div>
@@ -403,6 +406,40 @@
     $(document).ready(function () {
         let firstHeight = $('.carousel-inner').find('iframe').height();
         $('.carousel-item').css('height', firstHeight + 'px');
+
+        //init LIFF
+        liff.init(function (data) {
+        });
+        //ButtonGetProfile
+        liff.getProfile().then(
+            profile => {
+                alert(profile.displayName);
+            }
+        );
+
+        liff.sendMessages([
+            {
+                type: 'text',
+                text: 'Hello, World!'
+            },
+            {
+                "type": "template",
+                "altText": "this is a buttons template",
+                "template": {
+                    "type": "buttons",
+                    "actions": [
+                        {
+                            "type": "message",
+                            "label": "動作 1",
+                            "text": "動作 1"
+                        }
+                    ],
+                    "thumbnailImageUrl": "https://4.bp.blogspot.com/-KI3J0i8EA_w/W3abdmV_3sI/AAAAAAABOBo/3tL__0lghLYRSwgYy8DxXIIWiechM7SzgCLcBGAs/s400/lucky_yotsuba_clover_girl.png",
+                    "title": "募資進度",
+                    "text": "文字"
+                }
+            }
+        ])
     })
 
 </script>
