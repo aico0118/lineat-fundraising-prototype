@@ -18,7 +18,7 @@
 		2 link
 		3 Button
 		4 input,select,textarea
-		5 user_setting
+		5 user-setting
 		6 media query
 		
 ***********************************************************************************************/
@@ -27,103 +27,258 @@
 
 body{
     background:#f8f8f8;
-    font-family: '微軟正黑體';
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 /* 1.0 defind */
 /* 1.1 wrapper */
 /* 1.2 header */
 /* 1.3 navigation */
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #EEEEEE;
+}
+.nav-title{
+    
+    position: absolute;
+    width: 55px;
+    height: 23px;
+    left: 160px;
+    top: 8px;
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+
+    color: #585858;
+}
+/* menu */
+.menu img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 7px;
+}
+.menu div{
+    position: absolute;
+    width: 33px;
+    height: 21px;
+    left: 40px;
+    top: 9px;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    color: #585858;
+}
 /* 1.4 logo */
 /* 1.5 content */
-.responsive-16by9 {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    padding: 0;
-    padding-bottom: 56.25%;
+.embed-responsive-16by9{
+    margin-top: 45px;
 }
 
-.responsive-16by9 iframe {
-    position: absolute;
-    height: 100%;
+.details{
     width: 100%;
-    left: 0;
-    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.nav-tabs {
-border-bottom: 2px solid #dee2e6;
+.details-content{
+    margin:0 1.25% 0 1.25%;
+    width: 97.5%;
+    overflow: hidden;
 }
 
-.container-fiuld > *{
-    background:white;
-}
-.text-main-info{
+.details-content-title{
+    width: 100%;
+    margin-top: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
     font-size: 20px;
-}
-#content-tab a{
-    border-top:0px; 
-    border-left:0px; 
-    border-right:0px;
-    border-bottom:0px
-}
-.nav-item.active{
-    border-bottom: 2.5px solid #2196F3;
-}
-.nav-item{
-    border-bottom: 2.5px solid #dee2e6;
-}
-.nav-link.active{
-    font-weight: bolder;
-}
-.card-label-cnt{
-    font-size: 15px;    
-    line-height: 18px;
-}
-.card-label-content{
-    line-height: 28px;
-}
-.case-content-paragraph{
-    border: 3px solid #2196F3;
-}
-.case-content-paragraph-person{
-    border: 3px solid #FF9800;
-}
-.case-content-paragraph-tree{
-    border: 3px solid #a46810;
+    letter-spacing: 0.01em;
+
+    color: #000000;
 }
 
-.fixed {
-position: fixed;
-bottom: 0;
-right: 0;
-width: 100%;
-background-color: white;
+.tag{
+    margin-top: 19px;
+}
+#first-tag{
+    margin-left: 0px;
+}
+.btn-tag{
+    margin-left: 12px;
+
+    line-height: 16px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #2374E8;
+
+    background: #FFFFFF;
+    border: 1px solid #2374E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.money img{
+    margin-bottom: 6px;
+    width: 25px;
+    height: 25px;
+}
+.now-money{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    
+    color: #34535A;
+}
+.all-money{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    
+    color: #34535A;
+}
+.progress{
+
+    background: #EEEEEE;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+.progress-bar{
+    width: 50%;
+    background: #FFA143;
+    border-radius: 25px;
+}
+.progress-bar div{
+    float: right;
 }
 
-.text-gray{
-    color:gray;
+.data-block{
+    margin: 6px 0;
+}
+#first-data-img{
+    margin-left: 0px;
+}
+.data-block img{
+    width: 27.351%;
+    margin-left: 7%;
 }
 
-.text-donate-type{
-    font-size:14px; 
-    color:gray;
+.join-Amount{
+    position: absolute;
+    width: 65px;
+    height: 49px;
+    left: 6%;
+    top: 68%;
+}
+.remain-day{
+    position: absolute;
+    width: 81px;
+    height: 49px;
+    left: 38%;
+    top: 68%;
+}
+.track-Amount{
+    position: absolute;
+    width: 65px;
+    height: 49px;
+    left: 74.5%;
+    top: 68%;
+}
+.number-text .amount{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    float: left;
+    color: #FFA143;
+}
+.number-text .text{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    float: left;
+}
+.number-text .unit{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em; 
+    float: left;
+    margin-top: 10px;
 }
 
-.btn-follow{
-    background: #ececec;
-    cursor:pointer;
+/* 案例內容 */
+.content{
+    background: #FFFFFF;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
+    height: 200px;
+    margin-top:13px;
 }
-.btn-follow i{
-    color: #ffc107;
+.case-introduction{
+    overflow: hidden;
+    margin: 19px 0 0 0 ;
+    width:125px;
+    float: left;
+    height: 34px;
+    border-bottom: 2px solid ;
 }
-.btn-donate{
-    color: white;
-    background: #da3a3a; 
-    cursor:pointer;
+.case-introduction .text{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    margin-left: 11.65px;
+    width: 61px;
+    float: left;
+}
+.case-introduction img{
+    width: 26.35px;
+    height: 23px;
+    float: left;
+    margin-left: 10px;
+}
+.click{
+    color: #2374E8;
+    border-bottom-color: #2374E8
+}
+.unclick{
+    color: #959595;
+    border-bottom-color: #959595;
 }
 /*monthly collapse--start*/
 /* 4. input,select,textarea---------------------------------------------------------------------*/
-/* 5. user_setting------------------------------------------------------------------------------*/
+/* 5. user-setting------------------------------------------------------------------------------*/
 /* 6. media query------------------------------------------------------------------------------*/
