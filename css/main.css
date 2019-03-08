@@ -186,27 +186,45 @@ body{
 }
 
 .join-Amount{
-    position: absolute;
-    width: 65px;
-    height: 49px;
-    left: 6%;
-    top: 68%;
+    float: left;
+    background-image:url('../images/icon/icon_join_friend_number.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26.6%;
+    height: 76px;
+    padding: 21px 0px 0 0px;
+}
+.join{
+    margin-left:17.5%; 
+}
+.date{
+    margin-left:9%;
+}
+.track{
+    margin-left:17.5%;
 }
 .remain-day{
-    position: absolute;
-    width: 81px;
-    height: 49px;
-    left: 38%;
-    top: 68%;
+    float: left;
+    margin-left: 9.7%;
+    background-image: url('../images/icon/icon_project_reciprocal_number.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26.6%;
+    height: 76px;
+    padding: 21px 0px 0 0px;
 }
 .track-Amount{
-    position: absolute;
-    width: 65px;
-    height: 49px;
-    left: 74.5%;
-    top: 68%;
+    float: right;
+    margin-left: 8.6%;
+    background-image:url('../images/icon/icon_project_tracking_number.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26.6%;
+    height: 76px;
+    padding: 21px 0px 0 0px;
 }
 .number-text .amount{
+    margin-left: 19px;
     font-family: Noto Sans TC;
     font-style: normal;
     font-weight: bold;
