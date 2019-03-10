@@ -93,6 +93,7 @@ body{
 }
 
 .details{
+    padding-bottom: 7px;
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
@@ -178,6 +179,7 @@ body{
 }
 
 .data-block{
+    overflow: hidden;
     margin: 6px 0;
 }
 #first-data-img{
@@ -260,6 +262,17 @@ body{
     float: left;
     margin-top: 10px;
     margin-left: 2px;
+}
+
+.initiate{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+
+    color: #585858;
+
 }
 
 /* 案例內容 */
