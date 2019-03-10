@@ -76,18 +76,23 @@
     </div>
     <div class="content">
         <div class="details-content">
-            <div class="case-introduction click">
-                <img src="images/icon/icon_project_details_blue.png"> 
+            <div id="case-content" class="case-introduction click">
+                <img id="icon_project_details_blue" class="click" src="images/icon/icon_project_details_blue.png">
+                <img id="icon_project_details" class="unclick" src="images/icon/icon_project_details.png"> 
                 <div class="text click">
                     專案介紹
                 </div>
             </div>
-            <div class="case-introduction unclick">
-                <img src="images/icon/icon_donate-list.png"> 
+            <div id="donate-list" class="case-introduction unclick">
+                <img id="icon_donate-list_blue" class="click" src="images/icon/icon_donate-list_blue.png">
+                <img id="icon_donate-list" class="unclick" src="images/icon/icon_donate-list.png"> 
                 <div class="text unclick">
                     芳名錄
                 </div>
             </div>
+        </div>
+        <div class="case-content">
+            認識松茂部落
         </div>
         <div class="support-list">
             <table>
@@ -95,7 +100,6 @@
                     <tr>
                         <th>社名</th>
                         <th>姓名</th>
-                        <th>日期</th>
                         <th>捐款進度</th>
                         <th>金額</th>
                     </tr>
@@ -103,8 +107,19 @@
                 <tbody>
                     <tr>
                         <th>台北社企扶輪社</th>
+                        <th>孔徽徽</th>
+                        <th>即將捐款</th>
+                        <th>50000</th>
+                    </tr>
+                    <tr>
+                        <th>台北社企扶輪社</th>
                         <th>葉芮君</th>
-                        <th>2019.01.03</th>
+                        <th>即將捐款</th>
+                        <th>50000</th>
+                    </tr>
+                    <tr>
+                        <th>台北社企扶輪社</th>
+                        <th>鄭棋文Steven</th>
                         <th>即將捐款</th>
                         <th>50000</th>
                     </tr>
@@ -116,12 +131,55 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+$(document).ready(
+    function () {
         let firstHeight = $('.carousel-inner').find('iframe').height();
         $('.carousel-item').css('height', firstHeight + 'px');
-       
-    })
 
+//將芳名錄先隱藏 並且更換css 
+        $('.support-list').hide();
+        $('#icon_donate-list_blue').hide();
+        $('#icon_project_details').hide();
+        // 專案列表與芳名錄切換
+        $('#donate-list').click(function () {
+            if ($(".support-list").is(":visible")) {
+            } else {
+                $( "#donate-list" ).removeClass( "unclick" ).addClass( "click" );
+                $( "#case-content" ).removeClass( "click" ).addClass( "unclick" );
+                $( "#donate-list .text" ).removeClass( "unclick" ).addClass( "click" );
+                $( "#case-content .text" ).removeClass( "click" ).addClass( "unclick" );
+                $('.support-list').show();
+                $('.case-content').hide();
+                $('#icon_project_details_blue').hide();        $('#icon_project_details').show();
+                $('#icon_donate-list_blue').show();
+                $('#icon_donate-list').hide();
+            }
+        });
+        $('#case-content').click(function(){
+            if ($(".case-content").is(":visible")) {
+            } else {
+                $( "#case-content" ).removeClass( "unclick" ).addClass( "click" );
+                $( "#donate-list" ).removeClass( "click" ).addClass( "unclick" );
+                $( "#case-content .text" ).removeClass( "unclick" ).addClass( "click" );
+                $( "#donate-list .text" ).removeClass( "click" ).addClass( "unclick" );
+                $('.support-list').hide();
+                $('.case-content').show();
+                $('#icon_project_details_blue').show();      
+                $('#icon_project_details').hide();
+                $('#icon_donate-list_blue').hide();
+                $('#icon_donate-list').show();
+            }
+        });
+    });
+    
 </script>
 
 </html>

@@ -244,6 +244,7 @@ body{
     text-align: center;
     letter-spacing: 0.01em;
     float: left;
+    margin-top: 1px;
 }
 .number-text .unit{
     font-family: Noto Sans TC;
@@ -255,6 +256,7 @@ body{
     letter-spacing: 0.01em; 
     float: left;
     margin-top: 10px;
+    margin-left: 2px;
 }
 
 /* 案例內容 */
