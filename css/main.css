@@ -85,6 +85,9 @@ body{
 }
 /* 1.4 logo */
 /* 1.5 content */
+body{
+    margin-bottom: 49px;
+}
 .embed-responsive-16by9{
     margin-top: 45px;
 }
@@ -328,6 +331,51 @@ tbody{
 
     color: #585858;
 }
+/* 最底下 加入追蹤 立即捐款 兩個按鈕 */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 49px;
+    width: 100%;
+}
+footer button{
+    border: none;
+    height: 49px;
+    width: 100%;
+}
+footer button img{
+    margin: 0px 0 10px 0;
+    width: 35px;
+    height: 35px;
+}
+.join-track{
+    width: 50%;
+    float: left;
+}
+.join-track button{
+    background: #ECECEC;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 49px;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #34535A;
+}
+.now-donate{
+    width: 50%;
+    float: right;
+}
+.now-donate button{
+    background: #CB463F;
+    color:  #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 49px;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+}
+
 /*monthly collapse--start*/
 /* 4. input,select,textarea---------------------------------------------------------------------*/
 /* 5. user-setting------------------------------------------------------------------------------*/

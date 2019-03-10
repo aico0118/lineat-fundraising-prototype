@@ -128,17 +128,23 @@
         </div>
     </div>
 </body>
+<footer>
+    <div class="join-track">
+        <button>
+            <!-- 要去判斷是否追蹤 -->
+            <img src="images/icon/icon_already_tracking.png">
+            <img src="images/icon/icon_notYetTracking.png" style="display:none;">
+        加入追蹤</button>
+    </div>
+    <div class="now-donate">
+        <button>
+            <img src="images/icon/icon_donate_now.png">
+        立即捐款</button>
+    </div>
+</footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
-  });
-});
 $(document).ready(
     function () {
         let firstHeight = $('.carousel-inner').find('iframe').height();
