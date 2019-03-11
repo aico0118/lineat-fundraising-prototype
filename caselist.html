@@ -7,28 +7,120 @@
     <title>扶輪募資平台 | 影響圈</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/caselist.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"> 
 </head>
 <body>
     <div class="nav">
-        <div>
+        <div class="menu">
             <img src="images/icon/icon_hamber.png">
             <div>
                 選單
             </div>
         </div>
-        案例頁
+        <div class="nav-title">
+            總覽頁
+        </div>
     </div>
+    <div class="choice">
+        <div id="all" class="choice-item click">全部</div>
+        <div id="social-buy" class="choice-item unclick">社企商品</div>
+        <div id="social-donate" class="choice-item unclick">公益捐助</div>
+    </div>
+    <div class="caselist">
+        <div class="case">
+            <div class="case-img">
+                <img src="images/IMG_9537.JPG" alt="">
+            </div>
+            <div class="case-details">
+                <div class="title">
+                    <img src="images/icon/icon_social_donate.png" alt=""/>
+                    <span>松茂部落｜迢迢就醫路：偏鄉部落的美麗與哀愁</span>
+                </div>
+                <div class="number">
+                    <img src="images/icon/icon_number.png" alt=""/>
+                    <span>$300000</span>
+                </div>
+                <div class="progress progress-short">
+                    <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div>100%</div>
+                    </div>
+                </div>
+                <button type="button" class="donate-button" data-toggle="modal" data-target="#exampleModalScrollable">
+                    <img src="images/icon/icon_donate_now.png" alt="">
+                    <span>立即贊助</span>
+                </button>
+            </div>
+        </div>
+        <div class="case">
+            <div class="case-img">
+                <img src="images/IMG_9537.JPG" alt="">
+            </div>
+            <div class="case-details">
+                <div class="title">
+                    <img src="images/icon/icon_social-buy.png" alt="">
+                    <span>台灣藍鵲茶｜來自坪林的好茶</span>
+                </div>
+                <div class="case-list-initiate">
+                    發起者：<span>八百金股份有限公司 / </span>
+                    輔導社團：<span>台北社企扶輪社</span>
+                </div>
+                <button class="donate-button introduction">
+                    <img src="images/icon/icon_profile.png" alt="">
+                    <span>查看介紹</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 彈跳視窗-->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/icon/icon_dialog.png" alt="">
+                </button>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Step1. 方案選擇 </h5>
+                
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        let firstHeight = $('.carousel-inner').find('iframe').height();
-        $('.carousel-item').css('height', firstHeight + 'px');
-       
-    })
+$(document).ready(function () {
+    let firstHeight = $('.carousel-inner').find('iframe').height();
+    $('.carousel-item').css('height', firstHeight + 'px');
+
+    // 點選上方選單變色
+    $('#all').click(function(){ 
+        $( "#all" ).removeClass( "unclick" ).addClass( "click" );
+        $( "#social-buy" ).removeClass( "click" ).addClass( "unclick" );
+        $( "#social-donate" ).removeClass( "click" ).addClass( "unclick" );
+    });
+    $('#social-buy').click(function(){ 
+        $( "#social-buy" ).removeClass( "unclick" ).addClass( "click" );
+        $( "#all" ).removeClass( "click" ).addClass( "unclick" );
+        $( "#social-donate" ).removeClass( "click" ).addClass( "unclick" );
+    });
+    $('#social-donate').click(function(){ 
+        $( "#social-donate" ).removeClass( "unclick" ).addClass( "click" );
+        $( "#social-buy" ).removeClass( "click" ).addClass( "unclick" );
+        $( "#all" ).removeClass( "click" ).addClass( "unclick" );
+    });
+})
 
 </script>
-
+<script>
+</script>
 </html>
