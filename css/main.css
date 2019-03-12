@@ -484,7 +484,7 @@ hr{
 .impact-team input{
     vertical-align: middle;
 }
-.impact-team span{
+.impact-team label{
     font-style: normal;
     font-weight: normal;
     line-height: 20px;

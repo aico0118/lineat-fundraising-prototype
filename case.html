@@ -145,51 +145,51 @@
                     <h5 class="modal-title" id="exampleModalScrollableTitle">Step1. 方案選擇 </h5>
                 </div>
                 <hr>
-                <form action="">
+                <form action="" name="form">
                     <div class="modal-body">
                         <div class="program">
-                            <input type="radio" name="program-choice" value="A">
-                            <div class="program-text">
-                                雪中送炭方案<br>
-                                <span>贊助4趟車資/月</span>
-                            </div>
-                            <div class="program-money">
-                                $25,000元
-                            </div>
+                                <input id="programA" type="radio" name="programChoice" value="A" >
+                                <label class="program-text" for="programA">
+                                    雪中送炭方案<br>
+                                    <span>贊助4趟車資/月</span>
+                                </label>
+                                <label class="program-money" for="programA">
+                                    $25,000元
+                                </label>
                         </div>
                         <div class="program">
-                            <input type="radio" name="program-choice" value="B">
-                            <div class="program-text">
+                            <input id="programB" type="radio" name="programChoice" value="B">
+                            <label class="program-text" for="programB">
                                 好事成雙方案<br>
                                 <span>贊助8趟車資/2個月</span>
-                            </div>
-                            <div class="program-money">
+                            </label>
+                            <label class="program-money" for="programB">
                                 $50,000元
-                            </div>
+                            </label>
                         </div>
                         <div class="program">
-                            <input type="radio" name="program-choice" value="C">
-                            <div class="program-text">
+                            <input id="programC" type="radio" name="programChoice" value="C">
+                            <label class="program-text" for="programC">
                                 慷慨解囊方案<br>
                                 <span>贊助16趟車資/半年</span>
-                            </div>
-                            <div class="program-money">
+                            </label>
+                            <label class="program-money" for="programC">
                                 $150,000元
-                            </div>
+                            </label>
                         </div>
                         <div class="program">
-                            <input type="radio" name="program-choice" value="D">
-                            <div class="program-text">
+                            <input id="programD" type="radio" name="programChoice" value="D">
+                            <label class="program-text" for="programD">
                                 樂善好施方案<br>
                                 <span>贊助32趟車資/年</span>
-                            </div>
-                            <div class="program-money">
+                            </label>
+                            <label class="program-money" for="programD">
                                 $300,000元
-                            </div>
+                            </label>
                         </div>
                         <div class="impact-team">
-                            <input type="checkbox" >
-                            <span>加碼贊助影響圈團隊一客牛排NT$1,200</span>
+                            <input id="donateImpact" type="checkbox" >
+                            <label for="donateImpact">加碼贊助影響圈團隊一客牛排NT$1,200</span>
                         </div>
                         <div class="step2">
                             Step2. 匯款方式
@@ -261,7 +261,9 @@ $(document).ready(
                 $('#icon_donate-list').show();
             }
         });
-
+        // $('.program-text').click(function () {
+        //     document.form.programChoice[0].checked = true;
+        // });
     });
     
 </script>
