@@ -29,7 +29,12 @@ body{
     background:#f8f8f8;
     font-family: 'Noto Sans TC', sans-serif;
 }
-
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
 /* 1.0 defind */
 /* 1.1 wrapper */
 
@@ -388,13 +393,17 @@ footer button img{
 /*monthly collapse--start*/
 /* 4. input,select,textarea---------------------------------------------------------------------*/
 /* 彈跳視窗 選擇方案 */
+input{
+    width :20px;
+    height: 20px;
+}
 .modal-content{
     background: #3A575D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 .modal-header{
-    padding-top: 0px;
+    padding-top: 20px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -402,6 +411,15 @@ footer button img{
     letter-spacing: 0.01em;
 
     color: #FFFFFF;
+    border-bottom: 0px solid #e9ecef;
+    
+}
+hr{
+    width: 85.65%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .close{
     position: absolute;
@@ -414,5 +432,100 @@ footer button img{
     width: 35px;
     height: 35px;
 }
+
+.program{
+    margin: 24px auto;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    padding-left: 21px;
+    overflow: hidden;
+    height: 58px;
+    width: 100%;
+}
+.program input{
+    margin: 19px 0 0 0;
+    float: left;
+}
+.program-text{
+    margin: 12px 0 0 19px;
+    float: left;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.program-text span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 15px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.program-money{
+    margin: 18px 0 0 16px;
+    float: left;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+
+    color: #FFD568;
+}
+.impact-team{
+    margin: auto;
+    width: 95%;
+}
+.impact-team input{
+    vertical-align: middle;
+}
+.impact-team span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.step2{
+    margin: 23px 0 0 0;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    
+    color: #FFFFFF;
+}
+.modal-footer{
+    display: block;
+    overflow: hidden;
+    border-top:0px; 
+}
+.modal-footer button{
+    mix-blend-mode: normal;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #3A575D;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    width: 140px;
+    height: 32.33px;
+}
+
 /* 5. user-setting------------------------------------------------------------------------------*/
 /* 6. media query------------------------------------------------------------------------------*/
+

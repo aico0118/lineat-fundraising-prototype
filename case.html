@@ -133,6 +133,77 @@
             </table>
         </div>
     </div>
+        <!-- Modal 彈跳視窗-->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/icon/icon_dialog.png" alt="">
+                </button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Step1. 方案選擇 </h5>
+                </div>
+                <hr>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="program">
+                            <input type="radio" name="program-choice" value="A">
+                            <div class="program-text">
+                                雪中送炭方案<br>
+                                <span>贊助4趟車資/月</span>
+                            </div>
+                            <div class="program-money">
+                                $25,000元
+                            </div>
+                        </div>
+                        <div class="program">
+                            <input type="radio" name="program-choice" value="B">
+                            <div class="program-text">
+                                好事成雙方案<br>
+                                <span>贊助8趟車資/2個月</span>
+                            </div>
+                            <div class="program-money">
+                                $50,000元
+                            </div>
+                        </div>
+                        <div class="program">
+                            <input type="radio" name="program-choice" value="C">
+                            <div class="program-text">
+                                慷慨解囊方案<br>
+                                <span>贊助16趟車資/半年</span>
+                            </div>
+                            <div class="program-money">
+                                $150,000元
+                            </div>
+                        </div>
+                        <div class="program">
+                            <input type="radio" name="program-choice" value="D">
+                            <div class="program-text">
+                                樂善好施方案<br>
+                                <span>贊助32趟車資/年</span>
+                            </div>
+                            <div class="program-money">
+                                $300,000元
+                            </div>
+                        </div>
+                        <div class="impact-team">
+                            <input type="checkbox" >
+                            <span>加碼贊助影響圈團隊一客牛排NT$1,200</span>
+                        </div>
+                        <div class="step2">
+                            Step2. 匯款方式
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="modal-footer">
+                        <button type="button" class="assistant left" >轉交助理</button>
+                        <button type="button" class="self right">自行匯款</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
     <div class="join-track">
@@ -143,7 +214,7 @@
         加入追蹤</button>
     </div>
     <div class="now-donate">
-        <button>
+        <button type="button" class="donate-button" data-toggle="modal" data-target="#exampleModalScrollable">
             <img src="images/icon/icon_donate_now.png">
         立即捐款</button>
     </div>
@@ -190,6 +261,7 @@ $(document).ready(
                 $('#icon_donate-list').show();
             }
         });
+
     });
     
 </script>
