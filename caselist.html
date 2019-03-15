@@ -14,6 +14,29 @@
 </head>
 
 <body>
+    <div id="slide-bar">
+        <div class="slide-bar-items">
+            <a href="./caselist.html">
+                <div>案例總攬
+                    <img src="" alt="">
+                </div>
+            </a>
+            <div>追蹤案例列表
+                <img src="" alt="">
+            </div>
+            <div>已贊助名單
+                <img src="" alt="">
+            </div>
+            <a href="">
+                <div>提案
+                    <img src="" alt="">
+                </div>
+            </a>
+            <div>關於我們
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>  
     <div class="nav">
         <div class="menu">
             <img src="images/icon/icon_hamber.png">
@@ -178,6 +201,11 @@
         $('.title').click(function () {
             window.open("./case.html","_self");
         });
+                // slide-bar 滑出
+        $('#slide-bar').hide();
+        $('.menu').click(function () {
+            $('#slide-bar').toggle(); 
+        })
     })
 
 </script>
