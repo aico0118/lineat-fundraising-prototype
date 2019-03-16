@@ -432,6 +432,24 @@ footer button img{
 /*monthly collapse--start*/
 /* 4. input,select,textarea---------------------------------------------------------------------*/
 /* 彈跳視窗 選擇方案 */
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
 input{
     width :20px;
     height: 20px;
@@ -452,6 +470,21 @@ input{
     color: #FFFFFF;
     border-bottom: 0px solid #e9ecef;
     
+}
+.modal-body{
+    color: #FFFFFF;
+}
+.modal-body h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+}
+.modal-body p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.01em;
 }
 hr{
     width: 85.65%;

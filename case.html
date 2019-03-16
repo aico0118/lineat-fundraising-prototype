@@ -389,11 +389,29 @@
             </div>
         </div>
         </div>
+        <div class="modal fade" id="trackingModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icon/icon_dialog.png" alt="">
+                    </button>
+                    <div class="modal-body">
+                        <h4>親愛的圈友 您好：</h4>
+                        <p>
+                            <span>
+                                <!-- 帶入專案名稱 -->
+                            </span>
+                            專案已加入您的追蹤清單，可於左上方選單內「追蹤案例列表」查看,再次感謝您的追蹤！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <footer>
     <div class="join-track">
-        <button>
+        <button type="button" class="tracking-button" data-toggle="modal" data-target="#trackingModal">
             <!-- 要去判斷是否追蹤 -->
             <img src="images/icon/icon_already_tracking.png">
             <img src="images/icon/icon_notYetTracking.png" style="display:none;">
