@@ -17,32 +17,69 @@
     <div id="slide-bar">
         <div class="slide-bar-items">
             <a href="./caselist.html">
-                <div class="col-sm-1">
-                    <img src="images/icon/icon_home.png" alt="">
-                </div>
-                <div>案例總攬
-                    
-                </div>
-                <div>
-                    <img src="images/icon/icon_next.png" alt="">
-                </div>
-            </a>
-            <div>追蹤案例列表
-                <img src="images/icon/icon_next.png" alt="">
-            </div>
-            <div>已贊助名單
-                <img src="images/icon/icon_next.png" alt="">
-            </div>
-            <a href="">
-                <div>提案
-                    <img src="images/icon/icon_next.png" alt="">
+                <div class="overflow_hidden slide-bar-item">
+                    <div class="left slide-bar-item-icon">
+                        <img src="images/icon/icon_home.png" alt="">
+                    </div>
+                    <div class="left">案例總攬
+                    </div>
+                    <div class="right ">
+                        <img id="icon-next" src="images/icon/icon_next.png" alt="">
+                    </div>
                 </div>
             </a>
-            <div>關於我們
-                <img src="images/icon/icon_next.png" alt="">
-            </div>
+            <a href="#">
+                <div class="overflow_hidden slide-bar-item">
+                    <div class="left slide-bar-item-icon">
+                        <img src="images/icon/icon_follow(white).png" alt="">
+                    </div>
+                    <div class="left">追蹤案例列表
+                    </div>
+                    <div class="right">
+                        <img id="icon-next" src="images/icon/icon_next.png" alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="overflow_hidden slide-bar-item">
+                    <div class="left slide-bar-item-icon">
+                        <img src="images/icon/icon_list(white).png" alt="">
+                    </div>
+                    <div class="left">
+                        已贊助名單
+                    </div>
+                    <div class="right">
+                        <img id="icon-next" src="images/icon/icon_next.png" alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="overflow_hidden slide-bar-item">
+                    <div class="left slide-bar-item-icon">
+                        <img src="images/icon/icon_pencil.png" alt="">
+                    </div>
+                    <div class="left">提案
+
+                    </div>
+                    <div class="right">
+                        <img id="icon-next" src="images/icon/icon_next.png" alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="overflow_hidden slide-bar-item">
+                    <div class="left slide-bar-item-icon">
+                        <img src="images/icon/icon_profile.png" alt="">
+                    </div>
+                    <div class="left">關於我們
+                    </div>
+                    <div class="right">
+                        <img id="icon-next" src="images/icon/icon_next.png" alt="">
+                    </div>
+                </div>
+            </a>
         </div>
-    </div>  
+    </div>
     <div class="nav">
         <div class="menu">
             <img src="images/icon/icon_hamber.png">
@@ -160,7 +197,7 @@
                             </div>
                         </div>
                         <div class="impact-team">
-                            <input type="checkbox" >
+                            <input type="checkbox">
                             <span>加碼贊助影響圈團隊一客牛排NT$1,200</span>
                         </div>
                         <div class="step2">
@@ -169,7 +206,7 @@
                     </div>
                     <hr>
                     <div class="modal-footer">
-                        <button type="button" class="assistant left" >轉交助理</button>
+                        <button type="button" class="assistant left">轉交助理</button>
                         <button type="button" class="self right">自行匯款</button>
                     </div>
                 </form>
@@ -202,15 +239,15 @@
         });
         // 點選case
         $('.case-img').click(function () {
-            window.open("./case.html","_self");
+            window.open("./case.html", "_self");
         });
         $('.title').click(function () {
-            window.open("./case.html","_self");
+            window.open("./case.html", "_self");
         });
-                // slide-bar 滑出
+        // slide-bar 滑出
         $('#slide-bar').hide();
         $('.menu').click(function () {
-            $('#slide-bar').toggle(); 
+            $('#slide-bar').toggle();
         })
     })
 

@@ -41,8 +41,25 @@ body{
 
 /* 1.2 header */
 /* 1.3 navigation */
+.slide-bar-item-icon{
+    margin: 0 16px 0 20px;
+}
+.overflow_hidden{
+    overflow: hidden;
+}
+#icon-next{
+    margin-right: 27px;
+    width: 14px;
+    height: 21px;
+}
+.slide-bar-item{
+    margin: 16px 0 8px 0 ;
+}
+.slide-bar-items img{
+    width: 22px;
+    height: 22px;
+}
 .slide-bar-items div{
-    margin: 16px 0 8px 24px;
 
     font-style: normal;
     font-weight: 500;
@@ -52,12 +69,16 @@ body{
 
     color: #FFFFFF;
 }
+.slide-bar-items a{
+    width: 229px;
+}
 #slide-bar{
     position: fixed;
     z-index: 1000;
     background: rgba(52, 83, 90, 0.97);
     width: 73.6%;
     height: 100vh;
+    overflow: hidden;
 }
 .nav{
     position: fixed;
@@ -371,7 +392,7 @@ thead{
     font-size: 16px;
     letter-spacing: 0.01em;
     text-align: center;
-
+    background: #F4F4F4;
     color: #CB463F;
 }
 tbody{
@@ -383,6 +404,10 @@ tbody{
     letter-spacing: 0.01em;
 
     color: #585858;
+}
+tr:nth-child(even){
+    background: #F4F4F4;
+
 }
 /* 最底下 加入追蹤 立即捐款 兩個按鈕 */
 footer{
