@@ -626,3 +626,30 @@ hr{
 /* 5. user-setting------------------------------------------------------------------------------*/
 /* 6. media query------------------------------------------------------------------------------*/
 
+/* alreadyDonate.html */
+
+.alreadyDonateCase{
+    overflow: hidden;
+    width: 100%;
+    margin: 19px 0 0 0 ;
+
+    background: #FFFFFF;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.alreadyDonateCase h5{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+
+}
+
+.alreadyDonateImg{
+    width: 107px;
+    height: 107px;
+    border-radius: 6px;
+}
