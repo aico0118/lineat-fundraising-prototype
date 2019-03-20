@@ -32,6 +32,9 @@
 /* 1.1 wrapper */
 /* 1.2 header */
 /* 1.3 navigation */
+#all{
+	width: 26%;
+}
 .choice{
 	margin: 45px 11.15% 16px 11.15%;
 	width: 77.7%;
@@ -44,8 +47,12 @@
 	height: 33px;
 	line-height: 33px;
 	float: left;
-	width: 33.333%;
+	width: 37%;
 	text-align: center;
+}
+.choice-item img{
+	width: 20px;
+	height: 20px;
 }
 .click{
 	color: #2374E8;
@@ -70,6 +77,13 @@
 	width: 100%;
 	height: 180px;
 }
+.tracking{
+	position: fixed;
+	left: 80%;
+	width: 35px;
+	height: 35px;
+}
+
 .case-img img{
     width: 100%;
     object-fit: cover;
