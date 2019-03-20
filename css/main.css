@@ -564,8 +564,8 @@ hr{
     color: #FFFFFF;
 }
 .program-money{
-    margin: 18px 0 0 16px;
-    float: left;
+    margin: 18px 16px 0 0;
+    float: right;
     font-style: normal;
     font-weight: bold;
     line-height: 17px;
@@ -590,8 +590,9 @@ hr{
 
     color: #FFFFFF;
 }
-.step2{
-    margin: 23px 0 0 0;
+
+.modal-title{
+    margin: 0px 0 0 0;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -649,6 +650,7 @@ hr{
 }
 
 .alreadyDonateImg{
+    
     width: 107px;
     height: 107px;
     border-radius: 6px;

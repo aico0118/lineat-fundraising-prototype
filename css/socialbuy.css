@@ -1,0 +1,48 @@
+/* 彈跳視窗 */
+.modal-footer input{
+    width: 70%;
+}
+.input-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.form-control{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #3A575D;
+}
+.modal-footer p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.input-group-prepend{
+    margin: 0 6px 0 0;
+}
+::placeholder{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+
+    color: #8B9DA1;
+}
+.input-group{
+    margin: 16px 0 0 0;
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

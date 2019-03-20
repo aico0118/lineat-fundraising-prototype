@@ -97,8 +97,8 @@
         <div id="social-donate" class="choice-item unclick">公益捐助</div>
     </div>
     <div class="caselist">
-        <div class="case">
-            <div class="case-img">
+        <div id="socialDonate" class="case">
+            <div id="socialDonate" class="case-img">
                 <img src="images/IMG_9537.JPG" alt="">
             </div>
             <div class="case-details">
@@ -122,8 +122,8 @@
                 </button>
             </div>
         </div>
-        <div class="case">
-            <div class="case-img">
+        <div id="socialBuy" class="case">
+            <div id="socialBuy" class="case-img">
                 <img src="images/IMG_9537.JPG" alt="">
             </div>
             <div class="case-details">
@@ -238,11 +238,11 @@
             $("#all").removeClass("click").addClass("unclick");
         });
         // 點選case
-        $('.case-img').click(function () {
+        $('#socialDonate').click(function () {
             window.open("./case.html", "_self");
         });
-        $('.title').click(function () {
-            window.open("./case.html", "_self");
+        $('#socialBuy').click(function () {
+            window.open("./socialBuy-case.html", "_self");
         });
         // slide-bar 滑出
         $('#slide-bar').hide();
