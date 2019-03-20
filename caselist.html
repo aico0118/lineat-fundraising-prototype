@@ -94,11 +94,13 @@
     <div class="choice">
         <div id="all" class="choice-item click">全部</div>
         <div id="social-buy" class="choice-item unclick">
-            <img src="images/icon/icon_socialBuy_gray.png" alt="">
+            <img id="gray_social_buy" src="images/icon/icon_socialBuy_gray.png" alt="">
+            <img id="blue_social_buy" src="images/icon/icon_social_buy_blue.png" alt="">
             社企商品
         </div>
         <div id="social-donate" class="choice-item unclick">
-            <img src="images/icon/icon_socialDonate_grayBorder.png" alt="">
+            <img id="gray_social_donate" src="images/icon/icon_socialDonate_grayBorder.png" alt="">
+            <img id="blue_social_donate" src="images/icon/icon_social_donate_blue.png" alt="">
             公益捐助
         </div>
     </div>
@@ -229,21 +231,35 @@
         let firstHeight = $('.carousel-inner').find('iframe').height();
         $('.carousel-item').css('height', firstHeight + 'px');
 
+        $('#blue_social_buy').hide();
+        $('#blue_social_donate').hide();
         // 點選上方選單變色
         $('#all').click(function () {
             $("#all").removeClass("unclick").addClass("click");
             $("#social-buy").removeClass("click").addClass("unclick");
             $("#social-donate").removeClass("click").addClass("unclick");
+            $('#gray_social_buy').show();
+            $('#blue_social_buy').hide();
+            $('#gray_social_donate').show();
+            $('#blue_social_donate').hide();
         });
         $('#social-buy').click(function () {
             $("#social-buy").removeClass("unclick").addClass("click");
             $("#all").removeClass("click").addClass("unclick");
             $("#social-donate").removeClass("click").addClass("unclick");
+            $('#blue_social_buy').show();
+            $('#gray_social_buy').hide();
+            $('#blue_social_donate').hide();
+            $('#gray_social_donate').show();
         });
         $('#social-donate').click(function () {
             $("#social-donate").removeClass("unclick").addClass("click");
             $("#social-buy").removeClass("click").addClass("unclick");
             $("#all").removeClass("click").addClass("unclick");
+            $('#blue_social_donate').show();
+            $('#gray_social_donate').hide();
+            $('#blue_social_buy').hide();
+            $('#gray_social_buy').show();
         });
         // 點選case
         $('#socialDonate').click(function () {
