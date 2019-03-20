@@ -78,7 +78,7 @@
 	height: 180px;
 }
 .tracking{
-	position: fixed;
+	position: absolute;
 	left: 80%;
 	width: 35px;
 	height: 35px;
