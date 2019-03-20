@@ -580,8 +580,10 @@ hr{
 }
 .impact-team input{
     vertical-align: middle;
+    margin-bottom: 1.5rem;
 }
 .impact-team label{
+    width: 89%;
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
