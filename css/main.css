@@ -90,18 +90,15 @@ body{
     z-index: 6;
 }
 .nav-title{
-    
-    position: absolute;
-    width: 55px;
+    text-align: center;
+    margin: auto;
+    width: 60px;
     height: 23px;
-    left: 160px;
-    top: 8px;
     font-style: normal;
     font-weight: bold;
-    line-height: normal;
+    line-height: 23px;
     font-size: 18px;
     letter-spacing: 0.01em;
-
     color: #585858;
 }
 /* menu */
@@ -358,7 +355,7 @@ body{
     font-size: 15px;
     letter-spacing: 0.01em;
     margin-left: 11.65px;
-    width: 61px;
+    width: 65px;
     float: left;
 }
 .case-introduction img{
@@ -531,41 +528,46 @@ hr{
 }
 
 .program{
-    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    margin: 0px auto 24px auto;
     border: 1px solid #F2F2F2;
     border-radius: 5px;
-    padding-left: 21px;
     overflow: hidden;
-    height: 58px;
     width: 100%;
 }
 .program input{
-    margin: 19px 0 0 0;
+    align-items: center;
     float: left;
+    width: 15%
 }
 .program-text{
-    margin: 12px 0 0 19px;
+    align-items: center;
+    width: 55%;
+    margin: 18px auto;
     float: left;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 20px;
     font-size: 18px;
     letter-spacing: 0.01em;
 
     color: #FFFFFF;
 }
-.program-text span{
+.program-text .memo{
     font-style: normal;
     font-weight: normal;
     line-height: 15px;
     font-size: 12px;
     letter-spacing: 0.01em;
-
+    margin: 10px  auto 0 auto;
     color: #FFFFFF;
 }
 .program-money{
-    margin: 18px 16px 0 0;
-    float: right;
+    width: 30%;
+    align-items: center;
+    float: left;
     font-style: normal;
     font-weight: bold;
     line-height: 17px;
