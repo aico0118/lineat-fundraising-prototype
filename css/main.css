@@ -35,6 +35,9 @@ body{
 .left{
     float: left;
 }
+.py-2 img{
+    margin-bottom: 30px;
+}
 /* 1.0 defind */
 /* 1.1 wrapper */
 
@@ -544,7 +547,7 @@ hr{
 }
 .program-text{
     align-items: center;
-    width: 55%;
+    width: 60%;
     margin: 18px auto;
     float: left;
     font-style: normal;
@@ -565,7 +568,7 @@ hr{
     color: #FFFFFF;
 }
 .program-money{
-    width: 30%;
+    width: 25%;
     align-items: center;
     float: left;
     font-style: normal;
@@ -581,10 +584,12 @@ hr{
     width: 95%;
 }
 .impact-team input{
+    float: left;
+    width: 11%;
     vertical-align: middle;
-    margin-bottom: 1.5rem;
 }
 .impact-team label{
+    float: left;
     width: 89%;
     font-style: normal;
     font-weight: normal;
