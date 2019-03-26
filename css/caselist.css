@@ -75,7 +75,6 @@
 .case-img{
 	overflow: hidden;
 	width: 100%;
-	height: 180px;
 }
 .tracking{
 	position: absolute;
@@ -87,7 +86,6 @@
 .case-img img{
     width: 100%;
     object-fit: cover;
-	height: 180px;
 }
 .case-details{
 	overflow: hidden;
