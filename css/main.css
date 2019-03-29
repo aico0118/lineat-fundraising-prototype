@@ -335,6 +335,7 @@ body{
 .case-content{
     width: 93.3333%;
     margin: auto;
+    margin-top: 50px;
 }
 .case-content-paragraph{
     border: 3px solid #2196F3;
@@ -644,13 +645,27 @@ hr{
 .alreadyDonateCase{
     overflow: hidden;
     width: 100%;
-    margin: 60px 0 0 0 ;
+    margin: 19px 0 0 0 ;
 
     background: #FFFFFF;
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-.alreadyDonateCase p{
+.alreadyDonateTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92.2%;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+}
+.alreadyDonateTitle img{
+    align-items: center;
+    vertical-align: middle; 
+    width: 14px;
+    height: 14px;
+}
+.alreadyDonateTitle>p{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -659,7 +674,7 @@ hr{
     margin: 0 auto ;
     color: #000000;
     padding-left: 9px;
-
+    width: 95%;
 }
 
 .alreadyDonateImg{
@@ -669,28 +684,16 @@ hr{
     object-fit: cover;
 }
 
-.alreadyDonateTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 92.2%;
-    margin: 10px auto 0 auto;
-    overflow: hidden;
-}
+
 .caseDetail{
     width: 92.2%;
     margin: 10px auto 12px auto;
     overflow: hidden;
 }
-.alreadyDonateTitle img{
-    align-items: center;
-    vertical-align: middle; 
-    width: 14px;
-    height: 14px;
-}
+
 .img-item{
     width: 33.132%;
-    height: 107px;
+    height: 28.51vw;
     border: 3px solid #FF9E4A;
     box-sizing: border-box;
     border-radius: 5px;
@@ -702,7 +705,6 @@ hr{
 .caseDetailContent button{
     background: #CB463F;
     border-radius: 20px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -711,7 +713,41 @@ hr{
 
     color: #FFFFFF;
 }
+.caseDetailContent .second{
+    margin-right:9px;
+}
 .caseDetailContent button img{
     width: 14px;
     height: 14px;
+}
+.caseDetailContent .buy-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #585858;
+}
+.caseDetailContent .donate-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #585858;
+}
+.caseDetailContent .donate-finish{    
+    background: #585858;
+    border-radius: 20px;
+}
+.caseDetailContent .buy-memo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #CB463F;
 }
