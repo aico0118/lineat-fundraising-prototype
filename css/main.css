@@ -797,6 +797,7 @@ section{
     height: 12px;
 }
 .smallTitle {
+    margin-top: 15px;
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -805,17 +806,17 @@ section{
     letter-spacing: 0.01em;
 
     color: #3A585F;
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
 }
 .shadow{
     width: 40%;
     margin: 0 auto;
     height: 1px;
-    border-bottom: 3px solid #3A585F;
+    border: 2px solid #3A585F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 .background-orange{
-    margin-top: 22px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -823,7 +824,8 @@ section{
     letter-spacing: 0.01em;
 
     color: #000000;
-    background: #FFF1E3;
+    background-color: #FFF1E3;
+
     border-radius: 10px;
 
     padding: 12px 3% 9px 3%;
@@ -837,7 +839,8 @@ section{
 }
 #h1-2line{
     margin-top: 0px;
-    font-size: 26px;    
+    font-size: 24px;   
+    left: 30%; 
 }
 .aboutus-button{
     background: #3E5B62;
@@ -851,11 +854,16 @@ section{
 
     color: #FFFFFF;
 
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 
     padding: 3px 13px 3px 13px;
 }
 .button-group{
     overflow: hidden;
     padding:20px 5% 0 5%;
+}
+#triangle2{
+    width: 25px;
+    height: 25px;
+    margin: 0 46%;
 }
