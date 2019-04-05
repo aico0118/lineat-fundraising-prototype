@@ -92,6 +92,10 @@ body{
     background: #EEEEEE;
     z-index: 6;
 }
+.nav + div{
+    margin-top: 45px;
+}
+
 .nav-title{
     text-align: center;
     margin: auto;
@@ -750,4 +754,108 @@ hr{
     letter-spacing: 0.01em;
 
     color: #CB463F;
+}
+
+/* 關於我們頁面 */
+.aboutus-content img{
+    width: 100%;
+}
+.aboutus-content h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    left: 23%;
+    margin-top: 20px;
+}
+#logo{
+    width: 54%;
+    margin: 23px 22% 0 22%;
+}
+section{
+    width: 86%;
+    margin:24px 7% 30px 7%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+    overflow: hidden;
+}
+#triangle{
+    width: 12px;
+    height: 12px;
+}
+.smallTitle {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #3A585F;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.shadow{
+    width: 40%;
+    margin: 0 auto;
+    height: 1px;
+    border-bottom: 3px solid #3A585F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.background-orange{
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+    background: #FFF1E3;
+    border-radius: 10px;
+
+    padding: 12px 3% 9px 3%;
+}
+.text-bolder{
+    font-weight: 700;
+}
+#icon{
+    width: 16px;
+    height: 16px;
+}
+#h1-2line{
+    margin-top: 0px;
+    font-size: 26px;    
+}
+.aboutus-button{
+    background: #3E5B62;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+    padding: 3px 13px 3px 13px;
+}
+.button-group{
+    overflow: hidden;
+    padding:20px 5% 0 5%;
 }
