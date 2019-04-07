@@ -837,6 +837,8 @@ section{
     font-weight: 700;
 }
 #icon{
+    float: right;
+    margin: 5px;
     width: 16px;
     height: 16px;
 }
@@ -846,7 +848,6 @@ section{
     left: 30%; 
 }
 .aboutus-button{
-    width:143px;
     background: #3E5B62;
     border-radius: 10px;
 
