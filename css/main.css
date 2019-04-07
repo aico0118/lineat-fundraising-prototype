@@ -97,6 +97,7 @@ body{
 }
 
 .nav-title{
+    width:40%;
     text-align: center;
     margin: auto;
     font-style: normal;
