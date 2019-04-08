@@ -865,9 +865,10 @@ section{
 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 
-    /* padding: 3px 13px 3px 13px; */
+
     border:0px;
 }
+    /* padding: 3px 13px 3px 13px; */
 .button-group{
     overflow: hidden;
     padding:20px 3% 0 3%;
