@@ -851,6 +851,7 @@ section{
     left: 30%; 
 }
 .aboutus-button{
+    width: 39.55%;
     height: 32px;
     background: #3E5B62;
     border-radius: 10px;
@@ -864,11 +865,11 @@ section{
     color: #FFFFFF;
 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-
+    padding: 3px 13px 3px 13px;
 
     border:0px;
 }
-    /* padding: 3px 13px 3px 13px; */
+
 .button-group{
     overflow: hidden;
     padding:20px 3% 0 3%;
