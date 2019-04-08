@@ -719,6 +719,8 @@ hr{
     letter-spacing: 0.01em;
 
     color: #FFFFFF;
+
+    border:0px;
 }
 .caseDetailContent .second{
     margin-right:9px;
