@@ -851,6 +851,7 @@ section{
     left: 30%; 
 }
 .aboutus-button{
+    height: 32px;
     background: #3E5B62;
     border-radius: 10px;
 
